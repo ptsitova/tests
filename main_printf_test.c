@@ -1,17 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   main.c                                             :+:    :+:            */
+/*   main_printf_test.c                                 :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ptsitova <ptsitova@student.codam.nl>         +#+                     */
+/*   By: ptsitova <ptsitova@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2025/11/10 10:46:43 by ptsitova      #+#    #+#                 */
-/*   Updated: 2025/11/19 15:21:04 by ptsitova      ########   odam.nl         */
+/*   Updated: 2026/04/07 11:44:45 by ptsitova      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include <stdio.h>
+#include <string.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -48,7 +49,7 @@ static void	tests_plain_text_in_the_beginning_and_end_of_the_string()
 static void	tests_pointer_argument()
 {
 	int		result;
-	void	*string = ft_strdup("Hello world");
+	void	*string = strdup("Hello world");
 	long	number = 27;
 	void 	*max_ptr = (void *)ULONG_MAX;
 
